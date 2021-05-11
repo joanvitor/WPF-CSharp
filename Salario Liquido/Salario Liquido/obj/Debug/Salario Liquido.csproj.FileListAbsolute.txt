@@ -1,0 +1,15 @@
+D:\ZEUS\Estudando\WPF\Salario Liquido\Salario Liquido\bin\Debug\Salario Liquido.exe.config
+D:\ZEUS\Estudando\WPF\Salario Liquido\Salario Liquido\bin\Debug\Salario Liquido.exe
+D:\ZEUS\Estudando\WPF\Salario Liquido\Salario Liquido\bin\Debug\Salario Liquido.pdb
+D:\ZEUS\Estudando\WPF\Salario Liquido\Salario Liquido\obj\Debug\Salario Liquido.csprojAssemblyReference.cache
+D:\ZEUS\Estudando\WPF\Salario Liquido\Salario Liquido\obj\Debug\MainWindow.g.cs
+D:\ZEUS\Estudando\WPF\Salario Liquido\Salario Liquido\obj\Debug\App.g.cs
+D:\ZEUS\Estudando\WPF\Salario Liquido\Salario Liquido\obj\Debug\Salario Liquido_MarkupCompile.cache
+D:\ZEUS\Estudando\WPF\Salario Liquido\Salario Liquido\obj\Debug\Salario Liquido_MarkupCompile.lref
+D:\ZEUS\Estudando\WPF\Salario Liquido\Salario Liquido\obj\Debug\MainWindow.baml
+D:\ZEUS\Estudando\WPF\Salario Liquido\Salario Liquido\obj\Debug\Salario Liquido.g.resources
+D:\ZEUS\Estudando\WPF\Salario Liquido\Salario Liquido\obj\Debug\Salario_Liquido.Properties.Resources.resources
+D:\ZEUS\Estudando\WPF\Salario Liquido\Salario Liquido\obj\Debug\Salario Liquido.csproj.GenerateResource.cache
+D:\ZEUS\Estudando\WPF\Salario Liquido\Salario Liquido\obj\Debug\Salario Liquido.csproj.CoreCompileInputs.cache
+D:\ZEUS\Estudando\WPF\Salario Liquido\Salario Liquido\obj\Debug\Salario Liquido.exe
+D:\ZEUS\Estudando\WPF\Salario Liquido\Salario Liquido\obj\Debug\Salario Liquido.pdb
