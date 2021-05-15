@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using static CursoUdemy.DominioTest.Cursos.CursoTest;
+﻿using CursoUdemy.Dominio.Cursos;
 
 namespace CursoUdemy.DominioTest._Builders
 {

@@ -1,9 +1,9 @@
-﻿using CursoUdemy.DominioTest._Builders;
+﻿using Bogus;
+using CursoUdemy.Dominio.Cursos;
+using CursoUdemy.DominioTest._Builders;
 using CursoUdemy.DominioTest._Util;
 using ExpectedObjects;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using Xunit;
 using Xunit.Abstractions;
 
@@ -33,11 +33,13 @@ namespace CursoUdemy.DominioTest.Cursos
             _output = output;
             _output.WriteLine("Construtor sendo executado !!!");
 
-            _nome = "Informática Básica";
-            _cargaHoraria = 80;
+            var faker = new Faker();
+
+            _nome = faker.Random.Word();
+            _cargaHoraria = faker.Random.Double(50, 1000);
             _publicoAlvo = PublicoAlvo.Estudante;
-            _valor = 950;
-            _descricao = "Uma descrição";
+            _valor = faker.Random.Double(100, 1000);
+            _descricao = faker.Lorem.Paragraph();
         }
 
         // CleanUP
@@ -134,38 +136,6 @@ namespace CursoUdemy.DominioTest.Cursos
             Assert.Throws<ArgumentException>(()
                 => CursoBuilder.Novo().ComValor(ValorInvalido).Build())
                 .ComMensagem("Valor inválido");
-        }
-
-        public enum PublicoAlvo
-        {
-            Estudante,
-            Universitario,
-            Empregado,
-            Empreendedor
-        }
-
-        public class Curso
-        {
-            public string Nome { get; private set; }
-            public double CargaHoraria { get; private set; }
-            public PublicoAlvo PublicoAlvo { get; private set; }
-            public double ValorCurso { get; private set; }
-            public string Descricao { get; }
-
-            public Curso(string nome, string descricao, double cargaHoraria, PublicoAlvo publicoAlvo, double valorCurso)
-            {
-                if (string.IsNullOrEmpty(nome)) throw new ArgumentException("Nome inválido");
-
-                if (cargaHoraria < 1) throw new ArgumentException("Carga horária inválida");
-
-                if (valorCurso < 1) throw new ArgumentException("Valor inválido");
-
-                this.Nome = nome;
-                this.Descricao = descricao;
-                this.CargaHoraria = cargaHoraria;
-                this.PublicoAlvo = publicoAlvo;
-                this.ValorCurso = valorCurso;
-            }
         }
     }
 }
